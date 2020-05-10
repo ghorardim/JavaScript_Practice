@@ -238,6 +238,9 @@ sneakers.discount += 20; // 70, setter is called
 sneakers.discount += 20; // 80, not 90!
 console.log(sneakers.discount); */
 
+
+/* 
+
 function Shape() {
     this.width;
     this.height;
@@ -268,3 +271,31 @@ var square = new Shape();
 square.width = -20;
 square.height = 20;
 console.log(square.area());
+
+ */
+
+
+ ///   Js Clouser..
+
+ var Add = function () {
+    var counter = 0;
+    var innerFunc = function () {
+        counter += 1; return counter
+    }
+    return innerFunc;
+};
+
+var add1 = new Add(); //first 
+var add2 = new Add();//second
+
+var val1 = add1();
+var val2 = add1();
+var val4 = add1();
+
+var val3 = add2();
+//output from first
+console.log(val1);
+console.log(val2);
+console.log(val4);
+//output from second
+console.log(val3);
